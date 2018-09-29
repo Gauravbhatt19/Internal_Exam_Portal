@@ -1,0 +1,73 @@
+body
+{
+	font-family:Verdana,arial; 
+}
+a
+{
+	text-decoration:none;
+	color:#fff;  
+}
+ul li
+{
+	list-style-type:none;  
+}
+.logo
+{	transition:1s; 
+	display:grid;
+	grid-template-columns:1fr 99999fr; 
+	text-align:center;  
+}
+.logo h1
+{
+	font-size:1.1rem; 
+	color:rgba(15,31,145,1);
+}
+nav
+{	 
+	background-color:rgba(131,222,205,1); 
+	color:rgba(62,82,78,0.7); 
+	margin:0px -8px; 
+}
+nav h1
+{
+	padding:10px; 
+	text-align:center; 
+}
+.bx
+{
+	background-color: 
+}
+@media only screen and (max-width:288px)
+{
+.logo
+{	transition:1s; 
+	display:none;  
+}
+nav
+{
+	margin-top:-8px; 
+}
+}
+@media only screen and (min-width:768px)
+{.logo
+	{
+
+	margin-left:50px;
+		}
+		
+		.logo h1
+{
+	font-size:1.5rem; 
+}
+nav
+{
+	grid-template-columns:1fr 1fr; 
+}
+
+}
+@media only screen and (min-width:1200px)
+{	.logo h1
+{
+	font-size:2rem; 
+}
+}
