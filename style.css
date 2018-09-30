@@ -43,9 +43,6 @@ nav h1
 {
 	display:grid;
 	grid-template-columns:repeat(auto-fit,1fr);
-	/*grid-gap:30px;
-	padding:80px;*//*
-	margin:0px 300px;     */
 }
 .bx div
 {
@@ -58,7 +55,7 @@ nav h1
 	background-color:rgba(215,228,245,1);
 	color:rgba(40,40,40,0.7);  
 	margin:-20px -10px -8px -8px;  
-	padding:30px; 
+	padding:10px; 
 }
 
 .lg
