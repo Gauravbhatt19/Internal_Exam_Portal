@@ -1,5 +1,3 @@
-<?php 
-?>
 <html>
 <head>
 	<title>EXAM PORTAL | THDC-IHET</title>
@@ -10,15 +8,9 @@
 	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
-<header>
-		<div class="logo">
-			<img src="img/logo.png" width="100">
-			<h1>THDC Institute of Hydropower Engineering and Technology</h1>
-		</div>
-		<nav>
-			<h1>Internal Examination Portal</h1>
-		</nav>
-	</header>
+<?php
+include './header.php'; 
+?>
 		<div class="xyz">
 			
 <div class="bd">
@@ -26,21 +18,21 @@
 	      	<h1>News</h1>
 	      	<ul>
 	      		<?php
-$conn=mysqli_connect("localhost","root","","spidersd_iep");
-$result=mysqli_query($conn,"SELECT * FROM news WHERE chck='1' ORDER BY utime DESC");
-$i=0;
-while($row=mysqli_fetch_assoc($result) and $i<3){
-	
-	$i++;
-		if($row['status']==1)
-	      	{
-	      		echo "<li><h3>".$row['hdr']."</h3> <p>".$row['msg'];
-	      		if($row['filename'])
-	      			{ $link="/upload/".$row['filename'].".pdf";
-	      			echo '<a href="'.$link.'" download="'.$row['filename'].'.pdf" class="hglt"> Attachment </a></p>';
-	      		}
-	      		echo "<h6> Date:". $row['utime']."</h6></li>";
-	      		}}
+				$conn=mysqli_connect("localhost","root","","spidersd_iep");
+				$result=mysqli_query($conn,"SELECT * FROM news WHERE chck='1' ORDER BY utime DESC");
+				$i=0;
+				while($row=mysqli_fetch_assoc($result) and $i<3){
+					$i++;
+						if($row['status']==1)
+					      	{
+					      		echo "<li><h3>".$row['hdr']."</h3> <p>".$row['msg'];
+					      		if($row['filename'])
+					      			{ $link="/upload/".$row['filename'].".pdf";
+					      			echo '<a href="'.$link.'" download="'.$row['filename'].'.pdf" class="hglt"> Attachment </a></p>';
+					      		}
+					      		echo "<h6> Date:". $row['utime']."</h6></li>";
+					      		}
+	      	}
 	      	?>
 	      		
 	      	</ul>
@@ -69,6 +61,8 @@ while($row=mysqli_fetch_assoc($result) and $i<3){
 		</form>
 	</div>
 </div>
-<footer><p>Designed by Spiders, Copyright &copy; Examination Department, 2018 </p></footer><div class="cnt">
+<?php
+include './footer.php'; 
+?>
 	</body>
 </html>

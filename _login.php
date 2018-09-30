@@ -28,7 +28,7 @@ else
 		if ( $result->num_rows== 0 )
 { 
  	header("location: error.php");
-
+}
 else {  $result_id = $result->fetch_assoc();
 if(password_verify($pass,$result_id['pass']))
 {       

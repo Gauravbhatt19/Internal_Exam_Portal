@@ -1,0 +1,1 @@
+<footer><p>Designed by Spiders, Copyright &copy; Examination Department, 2018 </p></footer>
