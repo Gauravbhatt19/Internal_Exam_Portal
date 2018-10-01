@@ -1,4 +1,8 @@
-<html>
+<?php
+if(isset($_SESSION['logged_in']))
+{
+session_destroy();
+}?><html>
 <head>
 	<title>EXAM PORTAL | THDC-IHET</title>
 	<link rel="icon" type="image/png" href="img/logo.png">

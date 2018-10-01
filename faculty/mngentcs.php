@@ -8,7 +8,7 @@ if(empty($_SESSION['logged_in']))
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Faculty | Internal Exam Portal</title>
+	<title>Manage Notices | Internal Exam Portal</title>
 	<link rel="icon" type="image/png" href="../img/logo.png">
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -52,11 +52,11 @@ if(empty($_SESSION['logged_in']))
 		<div  class="bx" >
 			<h1 style="margin-top:-30px; ">Control Panel</h1>
 				
-			<div class=" cd  gh"><a href="./mngemrks.php" class='lnks'>Manage Students Marks</a></div>
+			<div class=" cd  gh"><a href="#" class='lnks'>Manage Students Marks</a></div>
 
-					<div class=" cd  gh" ><a href="./mngentcs.php" class='lnks'>Manage Notices</a></div>
+					<div class=" cd  gh" ><a href="#" class='lnks'>Manage Notices</a></div>
 				<div class="  cd  gh">
-			<a href="./spapers.php" class='lnks'>Submit Sessional Paper</a></div>		
+			<a href="#" class='lnks'>Submit Sessional Paper</a></div>		
 			
 	</div>
 </div>
